@@ -1,6 +1,6 @@
-let tg = window.Telegram.WebApp;
+// let tg = window.Telegram.WebApp;
 
-const orderArray = [];
+const orderArray = []
 let buy = document.getElementById("zakaz");
 let order = document.getElementById("btn");
 
@@ -116,7 +116,7 @@ order.addEventListener("click", () =>{
             [user, mail, phone].forEach(item =>{
                 item.value = '';
             });
-        // tg.sendData(JSON.stringify(orderData));    
+        tg.sendData(JSON.stringify(orderData))    
         tg.close();
     }
 });
