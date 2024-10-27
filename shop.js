@@ -111,7 +111,7 @@ order.addEventListener("click", () =>{
             order: orderArray
         }
            
-        alert('Спасибо за заказ')
+        // alert('Спасибо за заказ')
         // console.log(orderData)
         if (!HasError) {
             [user, mail, phone].forEach(item =>{
