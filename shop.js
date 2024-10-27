@@ -110,13 +110,14 @@ order.addEventListener("click", () =>{
             phone: phone.value,
             order: orderArray
         }
-        // alert('Спасибо за заказ')
+        tg.sendData(JSON.stringify(orderData))    
+        alert('Спасибо за заказ')
         // console.log(orderData)
         if (!HasError) {
             [user, mail, phone].forEach(item =>{
                 item.value = '';
             });
-        tg.sendData(JSON.stringify(orderData))    
+
         tg.close();
     }
 });
