@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-grey: #685858;
+    --cards: #a5958c;
+    --grey: #757575;}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    color: var(--tg-theme-text-color);
+    background: var(--tg-theme-bg-color);
+}
+
+#main {
+    width: 100%;
+    padding: 20x;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 1px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    margin: 5px auto;
+ }
+
+.header .container{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.button {
+    border-radius: 8px;
+    background: var(--unnamed, linear-gradient(135deg, #DA8023 0%, #E2B438 100%));
+    display: flex;
+    width: 260px;
+    height: 62px;
+    box-sizing: border-box;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #191411;
+}
+
+.button:hover {
+    background: var(--unnamed, linear-gradient(135deg, #562d05 0%, #f8cc54 100%));
+
+}
+
+.prod-items {
+    display: grid;
+    grid-template-columns: repeat(3, 384px);
+    gap: 24px;
+    margin-top: 45px;
+}
+
+.prod-item {
+    padding: 30px;
+    border-radius: 16px;
+    border: 1px solid var(--dark-grey);
+    background: var(--cards);
+}
+
+.prod-item-img {
+    height: 250px;
+    cursor: pointer;
+}
+
+.b-images {
+    max-width: 100%;
+
+}
+
+.prod-item-title {
+    font-size: 24px;
+    line-height: 29px;
+    padding: 30px 0;
+}
+
+.zakaz-btn {
+    display: flex;
+    margin: 25px auto;
+    justify-content: center;
+}
+
+.prod-item-button {
+    display: grid;
+    justify-content: center;
+}
+
+.prod-item p {
+    font-size: 16px;
+    line-height: 140%;
+    padding-bottom: 18px;
+}
+
+@media (max-width:991.98px) {
+    .prod-item-img {
+        max-width: 75%;
+        height: 100px;}
+    
+    .prod-item-title {
+        line-height: 20px;
+    }
+
+    .button{
+        max-width: 80%;
+        margin-top: 5px;
+    } 
+    .prod-items {
+        grid-template-columns: repeat(2, 210px);
+        gap: 5px;
+        justify-content: center;
+    }
+    .prod-item {
+        padding: 21px;
+    }
+    .prod-item-title {
+        font-size: 18px;
+    }   
+    }
+
+    .order {
+        display: none;
+        position: relative;
+        flex-direction: column;
+    }
+
+    .order-form {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 60px; 
+        box-sizing: border-box;
+
+    }
+
+    .order-text {
+        text-align: center;
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .order-forms-inputs {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px;
+    }
+
+    .order-form-input {
+        background: linear-gradient(95.61deg, #da8023 0%, #E2B438 100%);
+        width: 344px;
+        border-radius: 8px;
+        margin-bottom: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+    .order-form-input input{
+        padding: 20px 10px;
+        color:#f1ecec;
+        background: var(--cards);
+        border-radius: 8px;
+        width: 300px;
+        height:45px;
+        box-sizing: border-box;
+        outline: none;
+        border: 1px solid transparent;
+        margin: 15px auto
+
+    }
+
+    .prod-item-van {
+        display: none;
+        height: 550px;
+        padding: 30px;
+        border-radius: 16px;
+    }
+
+    .prod-item-van p {
+        font-size: 16px;
+        line-height: 140%;
+        padding: 35px;
+    }
