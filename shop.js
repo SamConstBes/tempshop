@@ -11,10 +11,6 @@ buy.addEventListener("click", () =>{
     document.getElementById("user_name").value = tg.initDataUnsafe.user.first_name
 });
 
-// order.addEventListener("click", () =>{
-//     tg.close();
-// });
-
 let pic = document.getElementById("van");
 let logo = document.getElementById("logo");
 logo.addEventListener("click", () =>{
@@ -23,24 +19,6 @@ logo.addEventListener("click", () =>{
     document.getElementById("order").style.display="none";
     document.getElementById("zakaz-btn").style.display="flex";
 });
-
-// pic.addEventListener("click", () => {
-//     document.getElementById("bgvan").style.display='block';
-//     document.getElementById("prod").style.display="none"
-// })
-
-// let picts = document.querySelectorAll(".prod-item-img > img");
-// let imgs = document.getElementsByTagName(".prod-item-img > img");
-// for (let i = 0; i < picts.length; i++) {
-//     picts[i].onclick = function () {
-//         let card = document.getElementById("bgvan");
-//         let ob = {bgvan: `<img width="230" src="${imgs[i]}/>`};
-//         document.getElementById("bgvan").style.display='block';
-//         card.getElementsByTagName("img").innerHTML=ob;
-//         document.getElementById("prod").style.display="none";
-//         document.getElementById("zakaz-btn").style.display="none";
-//     }
-// }
 
 let vanBtn = document.getElementById("van-button");
 
@@ -110,9 +88,7 @@ order.addEventListener("click", () =>{
             phone: phone.value,
             order: orderArray
         }
-           
-        // alert('Спасибо за заказ')
-        // console.log(orderData)
+      
         if (!HasError) {
             [user, mail, phone].forEach(item =>{
                 item.value = '';
