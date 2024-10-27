@@ -1,6 +1,6 @@
-// let tg = window.Telegram.WebApp;
+let tg = window.Telegram.WebApp;
 
-const orderArray = []
+const orderArray = [];
 let buy = document.getElementById("zakaz");
 let order = document.getElementById("btn");
 
