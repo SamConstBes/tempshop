@@ -120,11 +120,11 @@ h1 {
     }
 
     .button{
-        max-width: 80%;
+        max-width: 85%;
         margin-top: 5px;
     } 
     .prod-items {
-        grid-template-columns: repeat(2, 180px);
+        grid-template-columns: repeat(2, 170px);
         gap: 3px;
         justify-content: center;
     }
