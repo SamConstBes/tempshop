@@ -110,7 +110,7 @@ h1 {
     padding-bottom: 18px;
 }
 
-@media (max-width:423px) {
+@media (max-width:991px) {
     .prod-item-img {
         max-width: 75%;
         height: 100px;}
