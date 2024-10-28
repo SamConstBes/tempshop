@@ -85,7 +85,7 @@ order.addEventListener("click", () =>{
             }
     });
     console.log(HasError)
-    
+    const tg = Telegram.WebApp;
         let orderData = {
             name: user.value,
             mail: mail.value,
