@@ -79,7 +79,7 @@ vanBtn.addEventListener("click", () =>{
      
     });
   });
-let tg = window.Telegram.WebApp;
+
 let user = document.getElementById("user_name");
 let mail = document.getElementById("user_email");
 let phone = document.getElementById("user_phone");
