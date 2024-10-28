@@ -80,6 +80,7 @@ h1 {
 .prod-item-img {
     height: 250px;
     cursor: pointer;
+    margin-bottom: 5px;
 }
 
 .b-images {
@@ -90,7 +91,7 @@ h1 {
 .prod-item-title {
     font-size: 24px;
     line-height: 29px;
-    padding: 30px 0;
+    padding: 1px 0;
 }
 
 .zakaz-btn {
@@ -135,6 +136,11 @@ h1 {
         font-size: 18px;
     }   
     }
+
+@media (min-width:992px) {
+        .container {
+            display: none;}
+        }
 
     .order {
         display: none;
