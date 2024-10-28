@@ -137,9 +137,17 @@ h1 {
     }   
     }
 
+@media (min-width:768px) {
+    .prod-items {
+        grid-template-columns: repeat(3, 200px);
+        gap: 5px;
+        justify-content: center;
+        }
+    }
+
 @media (min-width:992px) {
-        .container {
-            display: none;}
+    .container {
+        display: none;}
         }
 
     .order {
@@ -155,7 +163,6 @@ h1 {
         justify-content: center;
         margin-top: 60px; 
         box-sizing: border-box;
-
     }
 
     .order-text {
