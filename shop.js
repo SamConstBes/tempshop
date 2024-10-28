@@ -1,4 +1,4 @@
-
+let tg = window.Telegram.WebApp;
 
 const orderArray = [];
 let buy = document.getElementById("zakaz");
