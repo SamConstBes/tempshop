@@ -8,7 +8,7 @@ buy.addEventListener("click", () =>{
     document.getElementById("prod").style.display = "none";
     document.getElementById("order").style.display = "flex";
     document.getElementById("zakaz-btn").style.display="none";
-    document.getElementById("user_name").value = tg.initDataUnsafe.user.first_name
+  //document.getElementById("user_name").value = tg.initDataUnsafe.user.first_name
 });
 
 // order.addEventListener("click", () =>{
