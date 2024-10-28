@@ -1,4 +1,3 @@
-let tg = window.Telegram.WebApp;
 
 const orderArray = [];
 let buy = document.getElementById("zakaz");
@@ -23,24 +22,6 @@ logo.addEventListener("click", () =>{
     document.getElementById("order").style.display="none";
     document.getElementById("zakaz-btn").style.display="flex";
 });
-
-// pic.addEventListener("click", () => {
-//     document.getElementById("bgvan").style.display='block';
-//     document.getElementById("prod").style.display="none"
-// })
-
-// let picts = document.querySelectorAll(".prod-item-img > img");
-// let imgs = document.getElementsByTagName(".prod-item-img > img");
-// for (let i = 0; i < picts.length; i++) {
-//     picts[i].onclick = function () {
-//         let card = document.getElementById("bgvan");
-//         let ob = {bgvan: `<img width="230" src="${imgs[i]}/>`};
-//         document.getElementById("bgvan").style.display='block';
-//         card.getElementsByTagName("img").innerHTML=ob;
-//         document.getElementById("prod").style.display="none";
-//         document.getElementById("zakaz-btn").style.display="none";
-//     }
-// }
 
 let vanBtn = document.getElementById("van-button");
 
@@ -83,6 +64,7 @@ vanBtn.addEventListener("click", () =>{
 let user = document.getElementById("user_name");
 let mail = document.getElementById("user_email");
 let phone = document.getElementById("user_phone");
+let tg = window.Telegram.WebApp;
 order.addEventListener("click", () =>{
     let HasError = false;
     document.getElementById("error").innerText = '';
