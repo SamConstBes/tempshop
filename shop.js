@@ -47,7 +47,7 @@ let vanBtn = document.getElementById("van-button");
 vanBtn.addEventListener("click", () =>{
     document.getElementById("bgvan").style.display = "none";
     document.getElementById("order").style.display = "flex";
-    document.getElementById("user_name").value = tg.initDataUnsafe.user.first_name
+    //document.getElementById("user_name").value = tg.initDataUnsafe.user.first_name
 });
 
 [...document.querySelectorAll(".prod-item-img > img")].forEach(item => {
