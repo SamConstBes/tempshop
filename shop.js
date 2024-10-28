@@ -4,7 +4,7 @@ const orderArray = [];
 let buy = document.getElementById("zakaz");
 let order = document.getElementById("btn");
 
-buy.addEventListener("click", () =>{
+buy.addEventListener("click", (e) =>{
     document.getElementById("prod").style.display = "none";
     document.getElementById("order").style.display = "flex";
     document.getElementById("zakaz-btn").style.display="none";
