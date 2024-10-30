@@ -46,20 +46,32 @@ vanBtn.addEventListener("click", () =>{
   });
 
 
-  let prices = document.getElementById('price-card');
+  let footerPrice = document.getElementById("footer-price-card");
   let count = 0;
+  let cardWish = document.getElementById("prod-item-wish");
+  footerPrice.innerHTML = count;
 
   [...document.querySelectorAll(".prod-item-action > button")].forEach(item => {
     item.addEventListener("click", (e) => {
         let proId = e.currentTarget.getAttribute("data");
-        console.log(proId);
         orderArray.push(proId);
         console.log(orderArray);
         let count = orderArray.length;
-        prices.innerText = count;
-     
+        footerPrice.innerHTML = count;
     });
   });
+
+ [...document.querySelectorAll(".prod-item-wish")].forEach(item => {
+    item.addEventListener("click", (e) =>{
+        let cardWish = e.currentTarget;
+        let style = window.getComputedStyle(cardWish);
+        let counter = style.getPropertyValue('filter');
+        if (counter.length > 15){
+            cardWish.style.filter="brightness(1)";
+        }else{cardWish.style.filter="brightness(0) invert(1)";}
+        
+    });
+ });
 
 let user = document.getElementById("user_name");
 let mail = document.getElementById("user_email");
