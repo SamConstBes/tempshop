@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
-   <title>Telegram WebApps Cart</title>
-   <link rel="stylesheet" href="shop.css">
-  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Telegram WebApps Cart</title>
+    <link rel="stylesheet" href="shop.css">
+
 </head>
 
 <body>
     <header class="header">
-            <div class="container">
+        <div class="container" style="background-color: beige;">
+       
+
                 <div class="logo">
-                    <a href="index.html"><img id ="logo" src="./pictures/cart.png" alt="логотип"></a>
-                 
+                    <a href="index.html"><img id="logo" src="./pictures/cart.png" alt="логотип"></a>
+
                 </div>
                 <h1>Сумчатый молл</h1>
-                <!-- <nav class="nav-menu">
+                <div class="currency" id="Change" title="Change Currency">$</div>
+          
+
+            <!-- <nav class="nav-menu">
                     <ul class="menu-list">
                         <li class="menu-item">
                             <a data-link="why">Почему у нас</a>
@@ -28,16 +35,52 @@
                         <li class="menu-item">
                             <a data-link="order">Оформление заказа</a>
                         </li> -->
-                    </ul>
-                </nav>
-                <div class="currency" id="Change" title="Change Currency">
-                    <p id="price-card">0</p>
-                    <img id ="logo"src="./pictures/shopping-card.png" alt="логотип">
-            </div>
-        </header>
-    <div class="container">
-        <h1>ШАБЛОН МАГАЗИНА</h1>
-        <h2>Это раздел наши акции</h2>
-        <img class="b-images" src="./pictures/degacats.jpg" alt="">
+            <!-- </ul>
+            </nav> -->
+
         </div>
-        </body>
+    </header>
+    <div class="container">
+        <div class="act-content">
+            <h1>ШАБЛОН МАГАЗИНА</h1>
+            <div class="act-text"><h2>Это раздел наши акции</h2></div>
+            <div class="act-card">
+                <div class="prod-item">
+                    <div class="prod-item-img">
+                        <img src="./pictures/7.png" alt="Котлета из говядины" class="b-images" id="">
+                    </div>
+                    <div class="f-block-text">
+                         <div class="prod-item-title">Бургер чеддер & беконoм</div>
+                    <span>За сумку с котами - бургер в <a href="index.html">подарок!</a></span>
+                </div>
+            </div> <div class="second-card prod-item ">
+                <div class="f-block-text">
+                    <div class="prod-item-title">Шоппер с котиками в стиле Эдварда Дега</div>
+               <span>Скидка <a href="index.html">20%</a> до конца недели и крем в подарок!</span>
+           </div>
+                <div class="prod-item-img">
+                    <img src="./pictures/DegaAct.png" alt="Коты" class="b-images" id="">
+                </div>
+                
+        </div>
+
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img id ="cab" src="./pictures/home.png" alt="логотип"></a>
+              
+            </div>
+            <div class="logo">
+                <a href="act.html"><img id ="act" src="./pictures/act.png" style="filter: brightness(0) invert(1);"alt="логотип"></a>
+            </div>
+            <div class="favorite"><a href="favorit.html"><img id ="logo" src="./pictures/favorite.png" alt="логотип"></a>
+                
+            </div>
+            <div class="logo"><a href="cart.html"><p id="footer-price-card" >0</p>
+                <img id ="viewCart" src="./pictures/Shop.png" alt="логотип" style="margin-top: -10px;"></a>
+                
+    </footer>
+
+</body>
