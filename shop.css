@@ -398,5 +398,6 @@ h1 {
     max-width: 348px;
     display: flex;
     height: 165px;
+    background: var(--tg-theme-bg-color);
 }
     
